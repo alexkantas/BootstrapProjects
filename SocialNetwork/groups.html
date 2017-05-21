@@ -10,12 +10,12 @@
   <title>Dobble το Απόλυτο Social Network</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="../css/bootstrap.css" rel="stylesheet">
 
-  <!-- Ekko lightbox CSS-->
-  <link href="css/ekko-lightbox.css" rel="stylesheet">
+  <!-- Font-awesome -->
+  <link href="../css/font-awesome.css" rel="stylesheet">
 
-  <!-- Custom CSS-->
+  <!-- Custom -->
   <link href="css/style.css" rel="stylesheet">  
 </head>
 
@@ -58,8 +58,8 @@
         <ul class="nav navbar-nav">
           <li><a href="index.html">Αρχική</a></li>
           <li><a href="members.html">Μέλη</a></li>
-          <li><a href="groups.html">Ομάδες</a></li>
-          <li class="active"><a href="#">Φωτογραφίες</a></li>
+          <li class="active"><a href="#">Ομάδες</a></li>
+          <li><a href="photos.html">Φωτογραφίες</a></li>
           <li><a href="profile.html">Προφίλ</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -72,18 +72,33 @@
       <div class="row">
 
         <div class="col-md-8">
-          <h1 class="page-header">Φωτογραφίες</h1>
-          <ul class="photos gallery-parent">
-            <li><a href="img/sample1.jpg" data-toggle="lightbox" data-title="Αετός" data-footer="Ο Αετός πεθαίνει στον αέρα" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Εικόνα 1"><img src="img/sample1.jpg" class="img-thumbnail"></li></a>
-            <li><a href="img/sample2.jpg" data-toggle="lightbox" data-title="Καλαμάκια" data-footer="Καλαμάκια αλλά και χημεία" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Εικόνα 2"><img src="img/sample2.jpg" class="img-thumbnail"></li></a>
-            <li><a href="img/sample3.jpg" data-toggle="lightbox" data-title="Παγκάκι" data-footer="Αν θες να κάτσεις, κάτσε" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Εικόνα 3"><img src="img/sample3.jpg" class="img-thumbnail"></li></a>
-            <li><a href="img/sample4.jpg" data-toggle="lightbox" data-title="Μαργαρίτα" data-footer="Το λουλούδι του Ηλίου" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Εικόνα 4"><img src="img/sample4.jpg" class="img-thumbnail"></li></a>
-            <li><a href="img/sample5.jpg" data-toggle="lightbox" data-title="Μύλος" data-footer="Σε πολύ αερά όλα φαίνονται άσπρα" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Εικόνα 5"><img src="img/sample5.jpg" class="img-thumbnail"></li></a>
-            <li><a href="img/sample6.jpg" data-toggle="lightbox" data-title="Βάζο" data-footer="Βάζο με χρωματιστές μπάλες" data-gallery="mygallery" data-hover="tooltip" data-placement="top" title="Εικόνα 6"><img src="img/sample6.jpg" class="img-thumbnail"></li></a>
-          </ul>
-          <div class="clearfix"></div>
-        </div><!--col8-->
+          
+          <div class="groups">
+            <h1 class="page-header">Ομάδες</h1>
+            <div class="group-item">
+              <img src="img/group.png">
+              <h4><a href="#">Απλό Group Ένα</a></h4>
+              <p>Αυτό είναι ένα απλό group του φοβερού μας κοινωνικού δικτύου</p>
+              <p><a href="#" class="btn btn-default">Γίνε μέλος</a></p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="group-item">
+              <img src="img/group.png">
+              <h4><a href="#">Απλό Group Δύο</a></h4>
+              <p>Αυτό είναι ένα απλό group του φοβερού μας κοινωνικού δικτύου</p>
+              <p><a href="#" class="btn btn-default">Γίνε μέλος</a></p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="group-item">
+              <img src="img/group.png">
+              <h4><a href="#">Απλό Group Τρία</a></h4>
+              <p>Αυτό είναι ένα απλό group του φοβερού μας κοινωνικού δικτύου</p>
+              <p><a href="#" class="btn btn-default">Γίνε μέλος</a></p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
 
+        </div><!--col8-->
 
         <div class="col-md-4">
 
@@ -134,7 +149,7 @@
               <a class="btn btn-primary" href="#">Δες όλα τα Groups</a>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div><!--col4-->
       </div><!--row-->
     </div><!--container-->
@@ -150,20 +165,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.js"></script>
-    <!-- Ekko lightbox JS-->
-    <script src="js/ekko-lightbox.js"></script>
-    <script type="text/javascript">
-    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-    </script>
-    <script type="text/javascript">
-    $(function () {
-      $('[data-hover="tooltip"]').tooltip()
-    })
-    </script>
+    <script src="../js/bootstrap.js"></script>
   </body>
   </html>
